@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto&display=swap");
+/* defining all the color in root */
+:root {
+  --bg-color: #fdfdfb;
+  --color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jaro", sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* styling header -- all the nav and other items in nav */
+
+.logo {
+  /* margin: 0 auto; */
+  width: 12rem;
+  height: 5rem;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav-item {
+  display: flex;
+  list-style: none;
+  gap: 0 3rem;
+  padding: 1rem 0;
+  justify-content: center;
+  padding: 0.5rem 0rem 0 0;
+}
+/* styling link */
+.nav-item a {
+  text-decoration: none;
+  color: var(--color);
+  text-transform: uppercase;
+}
