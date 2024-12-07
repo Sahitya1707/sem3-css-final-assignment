@@ -2,7 +2,8 @@
 /* defining all the color in root */
 :root {
   --bg-color: #fdfdfb;
-  --color: black;
+  --color-1: black;
+  --color-2: red;
 }
 * {
   margin: 0;
@@ -11,8 +12,18 @@
   font-family: "Jaro", sans-serif;
   background-color: var(--bg-color);
 }
-
+body {
+  overflow-x: hidden;
+}
+main {
+  height: 100vh;
+}
 /* styling header -- all the nav and other items in nav */
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
 
 .logo {
   /* margin: 0 auto; */
@@ -37,6 +48,35 @@
 /* styling link */
 .nav-item a {
   text-decoration: none;
-  color: var(--color);
+  color: var(--color-1);
   text-transform: uppercase;
+}
+.nav-item li:hover {
+  color: var(--color-2);
+  transform: 0.5s ease-in-out;
+}
+
+/* styling products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /* height: 100vh; */
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* styling footer */
+footer {
+  text-align: center;
+  background-color: var(--color-1);
+  padding: 2rem 0;
+}
+footer span {
+  /* color: white; */
+  width: 100vw;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
 }
