@@ -139,7 +139,7 @@ header {
   height: 100%;
 }
 /* styling footer */
-footer {
+.footer {
   text-align: center;
   background-color: var(--color-1);
 
