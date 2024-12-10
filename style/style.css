@@ -18,7 +18,7 @@ body {
   background-color: var(--bg-color);
 }
 main {
-  height: 90vh;
+  min-height: 90vh;
   padding: 2rem;
 }
 /* styling header -- all the nav and other items in nav */
