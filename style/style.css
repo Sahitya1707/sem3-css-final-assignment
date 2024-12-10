@@ -170,3 +170,13 @@ footer .icon svg {
   background-color: none;
   height: 30px;
 }
+/* heading-two */
+.heading-style-2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 0.1px var(--color-2);
+}
