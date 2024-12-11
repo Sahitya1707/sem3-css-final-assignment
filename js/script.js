@@ -12,7 +12,7 @@ window.onload = async () => {
   footer.innerHTML = footerComponent;
   if (path === "/about.html" || path === "/service.html") {
     const main = document.querySelector("#main");
-    main.innerHTML = productCubeCompnent;
+    main.innerHTML += productCubeCompnent;
   }
 
   // ticker will only in homepage
