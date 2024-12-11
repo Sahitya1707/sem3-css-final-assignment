@@ -27,4 +27,4 @@ const rotateCube = () => {
   setInterval(changeSlide, 3000);
 };
 // only rotate the cube after cube template is load, so i have set after 1 sec
-setTimeout(rotateCube, 8000);
+setTimeout(rotateCube, 5000);
