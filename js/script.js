@@ -13,8 +13,8 @@ window.onload = async () => {
   if (
     path === "/about.html" ||
     path === "/service.html" ||
-    path === "about" ||
-    path === "service"
+    path === "/about" ||
+    path === "/service"
   ) {
     const main = document.querySelector("#main");
     main.innerHTML += productCubeComponent;
