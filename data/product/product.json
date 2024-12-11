@@ -1,0 +1,38 @@
+{
+  "a9": {
+    "name": " A9 Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/a9_large.jpg",
+    "price": "$99,999"
+  },
+  "a9s": {
+    "name": " A9s Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/a9s_large.jpg",
+    "price": "$90,999"
+  },
+  "c9": {
+    "name": " C9 Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/c9_large.jpg",
+    "price": "$90,999"
+  },
+  "c9r": {
+    "name": " C9r Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/c9r_large.jpg",
+    "price": "$90,999"
+  },
+  "c9s": {
+    "name": " C9s Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/c9s_large.jpg",
+    "price": "$90,999"
+  },
+  "m9": {
+    "name": " m9 Car",
+    "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
+    "image": "/images/m9_large.jpg",
+    "price": "$90,999"
+  }
+}
