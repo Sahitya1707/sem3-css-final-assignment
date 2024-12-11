@@ -6,9 +6,14 @@ const path = window.location.pathname;
 window.onload = async () => {
   const headerComponent = await loadHtml("../view/shared/header.html");
   const footerComponent = await loadHtml("../view/shared/footer.html");
+  const productCubeCompnent = await loadHtml("../view/productcube.html");
 
   header.innerHTML = headerComponent;
   footer.innerHTML = footerComponent;
+  if (path === "/about.html" || path === "/service.html") {
+    const main = document.querySelector("#main");
+    main.innerHTML = productCubeCompnent;
+  }
 
   // ticker will only in homepage
   if (path === "/" || path === "/index.html") {
