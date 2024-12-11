@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 
 const productId = params.get("id");
-console.log(params, productId);
+
 let product;
 const loadProduct = async () => {
   try {
