@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cube.css">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="scene">
+            <!-- refrence for this cube has been made from
+             
+            https://codepen.io/desandro/pen/KRWjzm 
+             
+            
+            https://3dtransforms.desandro.com/cube-->
+            <div class="cube">
+                <div class="cube__face cube__face--front">
+                    <img src="./images/png/a9_large.png" id="cube-img" alt="">
+                </div>
+                <div class="cube__face cube__face--back">
+
+                    <img src="./images/png/a9s_large.png" id="cube-img" alt="">
+
+                </div>
+                <div class="cube__face cube__face--right">
+                    <img src="./images/png/c9_large.png" id="cube-img" alt="">
+
+                </div>
+                <div class="cube__face cube__face--left">
+                    <img src="./images/png/c9r_large.png" id="cube-img" alt="">
+                </div>
+                <div class="cube__face cube__face--top">
+                    <img src="./images/png/c9s_large.png" id="cube-img" alt="">
+                </div>
+                <div class="cube__face cube__face--bottom"><img src="./images/png/m9_large.png" id="cube-img" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+
+        const slide = ["front", "right", "back", "left", "top", "bottom"];
+        let haveIt = [];
+        function generateUniqueRandom(maxNr) {
+            //Generate random number
+            let random = (Math.random() * maxNr).toFixed();
+
+            //Coerce to number by boxing
+            random = Number(random);
+
+            if (!haveIt.includes(random)) {
+                haveIt.push(random);
+                return random;
+            } else {
+                if (haveIt.length < maxNr) {
+                    //Recursively generate number
+                    return generateUniqueRandom(maxNr);
+                } else {
+
+                    return false;
+                }
+            }
+        }
+
+        let nextValue = "";
+        let cube = document.querySelector('.cube');
+        let currentClass = "";
+        let currentValue = "";
+        let showClass = "";
+        const changeSlide = () => {
+            if (currentClass) {
+                cube.classList.remove(currentClass)
+            }
+
+            currentValue = generateUniqueRandom(5);
+
+            showClass = `show-${slide[currentValue]}`
+
+
+
+
+
+            cube.classList.add(showClass);
+            currentClass = showClass;
+
+
+        }
+        setInterval(changeSlide, 3000)
+
+    </script>
+    <script src="./js/script.js" async defer></script>
+</body>
+
+</html>

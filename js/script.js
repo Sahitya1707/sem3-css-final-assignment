@@ -2,9 +2,8 @@ const header = document.querySelector("header"),
   footer = document.querySelector("footer"),
   tickerSection = document.querySelector(".ticker-section"),
   productThumb = document.querySelector("#product-thumb");
-
+const path = window.location.pathname;
 window.onload = async () => {
-  const path = window.location.pathname;
   const headerComponent = await loadHtml("../view/shared/header.html");
   const footerComponent = await loadHtml("../view/shared/footer.html");
 
@@ -33,13 +32,14 @@ const loadHtml = (location) => {
   return html;
 };
 
-const loadProductThumb = async () => {
-  try {
-    const productThumbData = await fetch("../data/product/product.json");
-    const data = await productThumbData.json();
-    console.log([data]);
-    for (const key in data) {
-      productThumb.innerHTML += `  <a href="/products/products.html?id=${key}">
+if (path === "/" || path === "/index.html") {
+  const loadProductThumb = async () => {
+    try {
+      const productThumbData = await fetch("../data/product/product.json");
+      const data = await productThumbData.json();
+      // looping through product data
+      for (const key in data) {
+        productThumb.innerHTML += `  <a href="/products/products.html?id=${key}">
                 <div class="product-item">
                     <div class="product-detail">
 
@@ -53,17 +53,18 @@ const loadProductThumb = async () => {
                     <h2 class="product-item-text">${data[key].name}</h2>
                 </div>
             </a>`;
-    }
+      }
 
-    if (data.length > 0) {
-      data.forEach((e, i) => {
-        productThumb.innerHTML += ` 
+      if (data.length > 0) {
+        data.forEach((e, i) => {
+          productThumb.innerHTML += ` 
        
             `;
-      });
+        });
+      }
+    } catch (err) {
+      console.log(err);
     }
-  } catch (err) {
-    console.log(err);
-  }
-};
-loadProductThumb();
+  };
+  loadProductThumb();
+}
