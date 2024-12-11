@@ -1,0 +1,12 @@
+@media (max-width: 1150px) {
+  .ticker {
+    --gap: 0px;
+    width: 95%;
+  }
+  .ticker-items {
+    animation: scroll 15s linear infinite;
+  }
+  .ticker-item {
+    width: 21rem;
+  }
+}
