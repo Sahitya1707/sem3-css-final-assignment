@@ -32,3 +32,40 @@
     width: 35rem;
   }
 }
+@media (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .img-menu {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .img-menu img {
+    width: 10rem;
+  }
+  .nav-items {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+    box-shadow: 2px 3px 5px var(--color-3);
+    transition: 0.5s ease-in;
+    height: 0px;
+    overflow: auto;
+  }
+
+  .nav-item li {
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid var(--color-3);
+  }
+}

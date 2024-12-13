@@ -28,6 +28,27 @@ window.onload = async () => {
     //   dark.classList.remove("hidden");
     // });
     // const
+
+    // controlling hamburger menu, close
+    const menu = document.querySelector(".menu");
+    const cross = document.querySelector(".cross");
+    const navItem = document.querySelector(".nav-item");
+
+    menu.addEventListener("click", () => {
+      menu.classList.add("hidden");
+      cross.classList.remove("hidden");
+      navItem.style.overflow = "auto";
+      navItem.style.height = "130px";
+
+      // navItem.classList.remove("hide-menu");
+    });
+    cross.addEventListener("click", () => {
+      cross.classList.add("hidden");
+      // navItem.style.overflow = "hidden";
+      navItem.style.height = "0px";
+      menu.classList.remove("hidden");
+      // navItem.classList.add("hide-menu");
+    });
   }
   if (
     path === "/about.html" ||
