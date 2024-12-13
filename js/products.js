@@ -17,6 +17,18 @@ const loadProduct = async () => {
     document.getElementById("product-description").textContent =
       product.description;
     document.getElementById("product-price").textContent = product.price;
+    // change the image according to the customer size
+    let size = document.getElementById("select-size");
+    size.addEventListener("change", (e) => {
+      console.log(e.target.value);
+      if (e.target.value === "sm") {
+        document.getElementById("product-image").src = product.image_small;
+      } else {
+        document.getElementById("product-image").src = product.image;
+      }
+    });
+    console.log("hi");
+    console.log(size);
   } else {
     document.querySelector(
       ".container"

@@ -3,6 +3,7 @@
     "name": " A9 Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/a9_large.jpg",
+    "image_small": "/images/a9_small.jpg",
     "price": "$99,999",
     "id": "a9"
   },
@@ -10,6 +11,7 @@
     "name": " A9s Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/a9s_large.jpg",
+    "image_small": "/images/a9s_small.jpg",
     "price": "$90,999",
     "id": "a9s"
   },
@@ -17,6 +19,7 @@
     "name": " C9 Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/c9_large.jpg",
+    "image_small": "/images/c9_small.jpg",
     "price": "$90,999",
     "id": "c9"
   },
@@ -24,6 +27,7 @@
     "name": " C9r Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/c9r_large.jpg",
+    "image_small": "/images/c9r_small.jpg",
     "price": "$90,999",
     "id": "c9r"
   },
@@ -32,6 +36,7 @@
     "name": " C9s Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/c9s_large.jpg",
+    "image_small": "/images/c9s_small.jpg",
     "price": "$90,999"
   },
   "m9": {
@@ -39,6 +44,7 @@
     "name": " m9 Car",
     "description": "   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora modi eum harum, adipisci ex eaque, at, aspernatur illo consequuntur fuga minus illum quo?",
     "image": "/images/m9_large.jpg",
+    "image_small": "/images/m9_small.jpg",
     "price": "$90,999"
   }
 }

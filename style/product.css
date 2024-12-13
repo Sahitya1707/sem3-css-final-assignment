@@ -5,8 +5,9 @@
   margin: 2rem auto;
   padding: 1.5rem;
   background-color: #fff;
+
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--color-3);
 }
 
 .product-header {
@@ -20,7 +21,7 @@
 .product-header img {
   max-width: 400px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--color-4);
   margin-bottom: 1rem;
 }
 
@@ -88,4 +89,43 @@
   height: 10rem;
 
   /* margin-top: 5rem; */
+}
+.product-size {
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+}
+.size {
+  background-color: var(--bg-color);
+  padding: 10px;
+  border: 1px solid var(--color-3);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.size span {
+  color: var(--color-1);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.size select {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  border: 1px solid var(--color-3);
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.size select:focus {
+  outline: none;
+  border-color: var(--color-2);
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.size option {
+  background-color: var(--color-4);
+  color: var(--color-1);
 }

@@ -19,7 +19,7 @@ window.onload = async () => {
     const main = document.querySelector("#main");
     main.innerHTML += productCubeComponent;
   }
-  console.log(productCubeComponent);
+
   // ticker will only in homepage
   if (path === "/" || path === "/index.html") {
     const tickerComponent = await loadHtml("./view/ticker.html");
