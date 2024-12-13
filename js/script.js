@@ -10,6 +10,25 @@ window.onload = async () => {
 
   header.innerHTML = headerComponent;
   footer.innerHTML = footerComponent;
+  // controlling light and dark mode only after header component is availbe
+  if (headerComponent) {
+    // ignore the below code as i was trying to implement dark mode and white mode but images are jpg and has background white which is making website look back when switching to dark mode.
+    // console.log();
+    // const dark = document.querySelector(".dark");
+    // const light = document.querySelector(".light");
+    // const body = document.querySelector("body");
+    // dark.addEventListener("click", () => {
+    //   dark.classList.add("hidden");
+    //   light.classList.remove("hidden");
+    //   body.classList.add("dark");
+    // });
+    // light.addEventListener("click", () => {
+    //   body.classList.remove("dark");
+    //   light.classList.add("hidden");
+    //   dark.classList.remove("hidden");
+    // });
+    // const
+  }
   if (
     path === "/about.html" ||
     path === "/service.html" ||

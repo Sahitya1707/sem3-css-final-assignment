@@ -7,6 +7,12 @@
   --color-3: rgba(0, 0, 0, 0.255);
   --color-4: white;
 }
+.dark {
+  --bg-color: rgb(46, 46, 46);
+  --color-1: white;
+  --color-2: red;
+  --color-3: rgba(255, 255, 255, 0.279);
+}
 * {
   margin: 0;
   padding: 0;
@@ -172,6 +178,14 @@ footer .icon svg {
   background-color: none;
   height: 30px;
 }
+footer .privacy {
+  margin: 0 0.5rem;
+  color: var(--color-2);
+  text-decoration: none;
+}
+footer .privacy:hover {
+  color: var(--bg-color);
+}
 .heading-style-1 {
   text-transform: uppercase;
   text-align: center;
@@ -212,27 +226,17 @@ footer .icon svg {
 }
 
 /* handling dark mode and light mode */
-li.theme {
-  border: 1px solid var(--color-1);
-  padding: 0.5rem;
-  display: flex;
-  width: 5rem;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  border-radius: 100vmax;
-  /* gap: 0 20px; */
+
+/* tried adding dark mode and light mode but cannot be done as image is in jpg and changing it in png can be time consuming */
+.theme {
+  display: none;
 }
-.theme svg,
-.theme .circle {
+.theme svg {
+  cursor: pointer;
   height: 20px;
+
   width: 20px;
 }
-li.circle {
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
+/* .hidden {
+  display: none;
+} */
