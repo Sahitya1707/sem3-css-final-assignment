@@ -1,0 +1,17 @@
+@media (max-width: 1100px) {
+  main div {
+    margin-top: 5rem;
+  }
+  section h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 600px) {
+  main div {
+    box-shadow: none;
+    padding: 0;
+  }
+  section {
+    margin-bottom: 10px;
+  }
+}

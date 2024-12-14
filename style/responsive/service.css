@@ -1,0 +1,22 @@
+@media (max-width: 1217px) {
+  .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 875px) {
+  .product-cube {
+    display: none;
+  }
+  .service-grid {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 875px) {
+  .service-grid {
+    padding: 0 2rem;
+  }
+  .service-card p {
+    font-size: 0.8rem;
+  }
+}

@@ -10,3 +10,20 @@
     width: 21rem;
   }
 }
+@media (max-width: 625px) {
+  .ticker-item {
+    width: 7rem;
+  }
+  .ticker img {
+    height: 3rem;
+  }
+  .ticker {
+    width: 100%;
+  }
+  .ticker-items {
+    animation: scroll 7s linear infinite;
+  }
+  .overlap-product-description {
+    font-size: 0.8rem;
+  }
+}
